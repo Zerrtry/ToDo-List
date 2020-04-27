@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: white;
+}
+
+li {
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: rgb(181, 195, 209);
+  color: rgb(102, 33, 33);
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+li:before {
+  content: "\200B";
+  position: absolute;
+}
+
+li::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+button {
+  float: right;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  background-color:  rgba(141, 49, 49, 0.993);
+  color: white;
+  font-size: 1em;
+}
+
+button.btn.btn-sm:hover {
+  background-color:rgba(218, 71, 71, 0.993);
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
